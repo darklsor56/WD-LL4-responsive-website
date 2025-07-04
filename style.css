@@ -16,3 +16,54 @@ h1 {
 body {
   background-color: yellow;
 }
+
+/* Navbar styles */
+nav {
+  display: flex; /* Puts navbar items in a row */
+  justify-content: space-between; /* Space between title and links */
+  align-items: center; /* Vertically center items */
+  background-color: #333; /* Dark background for navbar */
+  padding: 10px 20px;
+}
+
+.navbar-title {
+  color: #fff; /* White text for title */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: #fff; /* White text for links */
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive navbar: stack items on small screens */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li {
+    margin: 10px 0 0 0;
+  }
+}
