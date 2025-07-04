@@ -1,0 +1,18 @@
+/*  */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* This sets the text for h1 tags to red */
+h1 {
+  color: red;
+}
+
+/* This sets the background color of the whole page to yellow */
+body {
+  background-color: yellow;
+}
